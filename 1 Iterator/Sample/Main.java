@@ -21,5 +21,13 @@ public class Main {
             System.out.println(book.getName());
         }
         System.out.println();
+
+        // 2023.10.28(토) 9h30 내가 만든/수정한 iterator 사용해보기
+        BookShelfIteratorImproved itImproved = bookShelf.iteratorImproved();
+        while (itImproved.hasNext()) {
+            Book book = itImproved.next();
+            System.out.println(book.getName());
+        }
+        System.out.println();
     }
 }
